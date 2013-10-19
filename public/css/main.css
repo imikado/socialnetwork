@@ -1,0 +1,138 @@
+body{ 
+background:#67807c; 
+} 
+*{ 
+font-family:verdana; 
+font-size:12px; 
+} 
+img{ 
+border:none; 
+} 
+a{ 
+color:#67807c; 
+font-weight:bold; 
+} 
+
+.main{ 
+margin:0px auto; 
+width:900px; 
+background:#5EBFA4; 
+} 
+.main .menu{ 
+float:left; 
+width:180px; 
+margin:0px;
+border:0px;
+padding:0px;
+} 
+	.main .menu ul{ 
+	margin:0px; 
+	padding:0px; 
+	} 
+	.main .menu a{ 
+	text-decoration:none; 
+	} 
+	.main .menu li{ 
+	padding:2px 4px; 
+	margin:4px; 
+	margin-top:0px; 
+	background:#fff; 
+	list-style:none; 
+	border:2px solid #fff;  
+	} 
+	.main .menu .sep{
+	border:0px;
+	background:transparent;
+	}
+	.main .menu .selectionne{ 
+	background:#bbd4d0;
+	} 
+	.main .menu .selectionne a{ 
+	 
+	} 
+.main .content{ 
+float:left; 
+width:590px; 
+background:#fff; 
+padding:16px; 
+border-radius:0px 10px 0px 0px;
+} 
+h1{ 
+background:#67807c; 
+color:white; 
+font-weight:normal; 
+padding:6px; 
+} 
+h2{ 
+color:#67807c; 
+} 
+.main .content table th{ 
+text-align:left; 
+} 
+.main .content form .textarea, .main .content form .input{ 
+width:100%; 
+} 
+
+.main .pagination ul{ 
+margin:0px; 
+padding:0px; 
+} 
+.main .pagination li{ 
+padding:0px; 
+display:inline; 
+list-style:none; 
+} 
+.main .pagination .selectionne a{ 
+text-decoration:none; 
+font-weight:bold; 
+} 
+
+.inputDateAnnee{ 
+width:100px; 
+} 
+.inputDateMois{ 
+width:30px; 
+} 
+.inputDateJour{ 
+width:30px; 
+} 
+.taches{ 
+border-collapse: collapse; 
+} 
+.taches th{ 
+text-align:left; 
+} 
+.content td{ 
+vertical-align:top; 
+} 
+
+.tb_list{ 
+border-collapse: collapse; 
+} 
+.tb_list th,.tb_list td{ 
+border:1px solid gray; 
+} 
+.tb_list th{ 
+text-align:left; 
+} 
+.tb_list td{ 
+vertical-align:top; 
+} 
+.tb_list .alt td{ 
+background:#eee; 
+} 
+
+.tb_show th{ 
+color:#67807c; 
+} 
+
+.login{ 
+padding:10px; 
+} 
+.content p{ 
+margin:10px; 
+} 
+
+input, textarea{ 
+border:2px solid #67807c; 
+}
