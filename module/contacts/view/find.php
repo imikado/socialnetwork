@@ -10,12 +10,17 @@ value="Rechercher"/></p>
    <?php if($this->tUserFound):?>
        <table>
        <?php foreach($this->tUserFound as $oUserFound):?>
+			<?php $sPicture=_root::getConfigVar('path.data').'/img/default.png'; if($oUserFound->profilPicture!=''){ $sPicture= $oUserFound->profilPicture;}?>
            <tr>
-           <td><?php echo $oUserFound->lastname?></td>
-           <td><?php echo $oUserFound->firstname?></td>
-           <td><a href="<?php echo _root::getLink('contacts::ask',
-										array('id'=>$oUserFound->id))
-										?>">demander en contact</a></td>
+			<td><img style="height:20px" src="<?php echo $sPicture;?>"/></td>
+			<td>
+			<a href="<?php echo _root::getLink('mainShare::profil',array('user_id'=>$oUserFound->id))?>">
+			<?php echo $oUserFound->lastname?> <?php echo $oUserFound->firstname?>
+			</a>
+			</td>
+			<td><a href="<?php echo _root::getLink('contacts::ask',
+									array('id'=>$oUserFound->id))
+									?>">demander en contact</a></td>
            </tr>
        <?php endforeach;?>
        </table>
