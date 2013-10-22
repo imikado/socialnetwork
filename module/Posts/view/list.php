@@ -9,7 +9,7 @@
            <p><?php echo $oPosts->body ?></p>
        </div>
        <div style="float:right;margin-right:10px;text-align:right">
-           <h2><?php echo $this->tIndexdUsers[$oPosts->user_id]->firstname ?> <?php echo $this->tIndexdUsers[$oPosts->user_id]->lastname ?></h2>
+           <h2><a href="<?php echo _root::getLink('mainShare::profil',array('user_id'=>$oPosts->user_id))?>"><?php echo $this->tIndexdUsers[$oPosts->user_id]->firstname ?> <?php echo $this->tIndexdUsers[$oPosts->user_id]->lastname ?></a></h2>
            <img style="width:50px" src="<?php echo $this->tIndexdUsers[$oPosts->user_id]->profilPicture ?>"/>
        </div>
        <div style="clear:both"></div>
