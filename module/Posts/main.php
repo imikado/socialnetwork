@@ -55,6 +55,9 @@ class module_Posts extends abstract_moduleembedded{
 	   $oView=new _view('Posts::list');
 	   $oView->tPosts=$tPosts;
 	   $oView->tIndexdUsers=model_Users::getInstance()->getListIndexed();
+	   
+	   //instanciation du module like
+	   $oView->oModuleLike=new module_like;
 
 	   return $oView;
 	}
