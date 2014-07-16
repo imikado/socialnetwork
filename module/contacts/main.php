@@ -32,6 +32,10 @@ class module_contacts extends abstract_moduleembedded{
 		return $this->$sAction();
 	}
 	
+	public function before(){
+		
+	}
+	
 	/*
 	Pour integrer au sein d'un autre module:
 	
